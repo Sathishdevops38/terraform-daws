@@ -1,7 +1,6 @@
 resource "aws_security_group" "allow-all" {
   name        = "allow_all"
   description = "Allow all inbound traffic and all outbound traffic"
-  vpc_id      = "vpc-0e5b821f84ca6c619"
   
   egress {
     from_port        = 0 # from port 0 to to port 0 means all ports
