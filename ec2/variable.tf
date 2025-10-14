@@ -18,7 +18,7 @@ variable "subnet_id" {
   default = "subnet-06dc23984fd523dd0"
 }
 
-variable "sg" {
+variable "sg_id" {
   type = string
   default = "sg-042fe005f1e4d6ce9"
 }
