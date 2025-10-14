@@ -1,3 +1,6 @@
+variable "environment" {
+    default = "qa"
+}
 variable "ami_id" {
   default = "ami-0caa91d6b7bee0ed0"
 }
