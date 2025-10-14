@@ -1,6 +1,6 @@
 resource "aws_instance" "terraform" {
   ami = "ami-04c08fd8aa14af291"
-  instance_type = "t3.medium"
+  instance_type = "t3.micro"
   security_groups = [aws_security_group.allow-all.id]
   subnet_id = "subnet-06dc23984fd523dd0"
   tags = {
