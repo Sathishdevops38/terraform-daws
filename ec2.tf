@@ -1,9 +1,10 @@
 resource "aws_instance" "terraform" {
-  ami = "ami-04c08fd8aa14af291"
+  ami = "ami-0caa91d6b7bee0ed0"
   instance_type = "t3.micro"
-  security_groups = [aws_security_group.allow-all.id]
+  vpc_security_group_ids = [ aws_security_group.allow-all.id ]
   tags = {
-    Name = "2186585_terraform"
+    Name = "terraform"
     Terraform = true
   }
 }
+
