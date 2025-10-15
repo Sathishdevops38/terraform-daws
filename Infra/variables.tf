@@ -116,3 +116,12 @@ variable "sg_tags" {
 variable "sg_name" {
   default = "robo_sg_all"
 }
+
+
+variable "zone_id" {
+  default = "Z05700624Q21KABEP00F"
+}
+
+variable "domain_name" {
+  default = "daws38sat.fun"
+}
