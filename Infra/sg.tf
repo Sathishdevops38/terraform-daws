@@ -1,7 +1,7 @@
 resource "aws_security_group" "robo_sg_all" {
   name        = var.sg_name
-   description = "Allow all inbound traffic and all outbound traffic"
-  
+  description = "Allow all inbound traffic and all outbound traffic"
+  vpc_id = aws_vpc.robo_vpc.id
   egress {
     from_port        = var.egress_from_port # from port 0 to to port 0 means all ports
     to_port          = var.egress_to_port 

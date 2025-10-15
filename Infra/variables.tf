@@ -19,11 +19,11 @@ variable "vpc_tags" {
 }
 
 variable "availability_zone_pub" {
-  default = "us-east-1a"
+  default = "us-west-2a"
 }
 
 variable "availability_zone_pri" {
-  default = "us-east-1b"
+  default = "us-west-2b"
 }
 variable "robo_pub_cidr" {
   default = "10.0.1.0/24"
@@ -33,7 +33,7 @@ variable "robo_pri_cidr" {
   default = "10.0.2.0/24"
 }
 
-variable "sub_tags" {
+variable "sub_tags_pub" {
   default = {
     Name= "robo-pub"
     Terraform= true
@@ -41,7 +41,7 @@ variable "sub_tags" {
   }
 }
 
-variable "sub_tags" {
+variable "sub_tags_pri" {
   default = {
     Name= "robo-pri"
     Terraform= true
